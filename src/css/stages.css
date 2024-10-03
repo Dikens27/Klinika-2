@@ -1,0 +1,38 @@
+.stages {
+  background: linear-gradient(
+    -87.61deg,
+    #dde9ff 43.16%,
+    rgba(221, 233, 255, 0) 92.3%
+  );
+}
+
+.stages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stages-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stages-item-container {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stages-item-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+.stages-item-text {
+  color: var(--color-text);
+}

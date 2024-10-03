@@ -1,44 +1,93 @@
 .header {
-  padding: 20px 0;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-.nav {
+
+.top-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.nav-logo {
-  display: inline-flex;
+
+.header-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-nav-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-title);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
-.nav-list {
+
+.header-nav-logo-logotype {
+  background-color: dimgray;
+}
+
+.header-nav-logo-container {
   display: flex;
+  gap: 8px;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  flex-direction: column;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.header-nav-logo-container-text {
+  color: var(--color-title-2);
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.header-nav-list {
+  display: flex;
+  gap: 24px;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.header-nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-title);
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-contacts-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.svg {
+  fill: darkcyan;
+}
+
+.header-contacts-item-text {
+  color: var(--color-title);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-contacts-item-span {
+  color: var(--color-text);
 }
