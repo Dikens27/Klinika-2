@@ -1,52 +1,65 @@
 let slideIndex = 1;
 let isMovingForward = true;
-showSlide(slideIndex);
+let isAnimating = false;
 
-function moveSlide(n) {
-  isMovingForward = n > 0;
-  showSlide((slideIndex += n));
-}
+document.addEventListener('DOMContentLoaded', () => {
+  showInitialSlide(); // Відображаємо перший слайд при завантаженні сторінки
+});
 
 document.querySelector('.prev').addEventListener('click', () => {
-  moveSlide(-1);
+  if (!isAnimating) {
+    moveSlide(-1);
+  }
 });
 
 document.querySelector('.next').addEventListener('click', () => {
-  moveSlide(1);
+  if (!isAnimating) {
+    moveSlide(1);
+  }
 });
 
-function showSlide(n) {
+function showInitialSlide() {
   let slides = document.querySelectorAll('.slide');
+  slides[0].style.display = 'block'; // Відображаємо перший слайд
+}
 
-  if (n > slides.length) {
+function moveSlide(n) {
+  isAnimating = true; // Блокуємо повторне натискання кнопок під час анімації
+
+  let slides = document.querySelectorAll('.slide');
+  let previousSlideIndex = slideIndex - 1;
+
+  // Оновлюємо slideIndex для нового слайда
+  slideIndex += n;
+  if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-
-  if (n < 1) {
+  if (slideIndex < 1) {
     slideIndex = slides.length;
   }
 
-  slides.forEach(slide => {
-    slide.style.display = 'none';
-    slide.classList.remove(
-      'active',
-      'previous',
-      'active-reverse',
-      'previous-reverse'
-    );
-  });
+  let currentSlide = slides[slideIndex - 1];
+  let previousSlide = slides[previousSlideIndex];
 
-  if (isMovingForward) {
-    slides[slideIndex - 1].style.display = 'block';
-    slides[slideIndex - 1].classList.add('active');
-
-    let prevIndex = slideIndex - 2 < 0 ? slides.length - 1 : slideIndex - 2;
-    slides[prevIndex].classList.add('previous');
+  // Додаємо анімації
+  if (n > 0) {
+    currentSlide.style.display = 'block';
+    previousSlide.classList.add('slideOutToLeft');
+    currentSlide.classList.add('slideInFromRight');
   } else {
-    slides[slideIndex - 1].style.display = 'block';
-    slides[slideIndex - 1].classList.add('active-reverse');
-
-    let nextIndex = slideIndex % slides.length;
-    slides[nextIndex].classList.add('previous-reverse');
+    currentSlide.style.display = 'block';
+    previousSlide.classList.add('slideOutToRight');
+    currentSlide.classList.add('slideInFromLeft');
   }
+
+  previousSlide.addEventListener(
+    'animationend',
+    function () {
+      previousSlide.style.display = 'none';
+      previousSlide.classList.remove('slideOutToLeft', 'slideOutToRight');
+      currentSlide.classList.remove('slideInFromRight', 'slideInFromLeft');
+      isAnimating = false; // Анімація завершена, кнопки знову можна натискати
+    },
+    { once: true }
+  );
 }

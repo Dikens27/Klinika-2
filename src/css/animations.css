@@ -7,15 +7,7 @@
   }
 }
 
-@keyframes slideOutToLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
+/* Анімація для з'явлення слайда з лівого боку */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
@@ -25,6 +17,17 @@
   }
 }
 
+/* Анімація для виходу слайда вліво */
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Анімація для виходу слайда вправо */
 @keyframes slideOutToRight {
   from {
     transform: translateX(0);
