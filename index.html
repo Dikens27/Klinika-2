@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klinika</title>
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Bz9HT-Nm.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CkpOyIMm.css">
   </head>
   <body>
     <header class="header">
@@ -176,12 +176,9 @@
       </li>
       <li class="stages-item">
         <div class="stages-item-container">
-          <h3 class="stages-item-title">
-            Безкоштовний огляд в процесі лікування
-          </h3>
+          <h3 class="stages-item-title">Постійний моніторинг спеціалістів</h3>
           <p class="stages-item-text">
-            Безкоштовний огляд в процесі лікування та визначення ефективності та
-            якості лікування
+            Безперервний супровід і відстеження динаміки протягом лікування
           </p>
         </div>
 
@@ -352,23 +349,23 @@
         height="92"
         alt="stages"
       />
-      <h2 class="section-title">Послуги</h2>
+      <h2 class="section-title">Що вас турбує?</h2>
     </div>
 
     <ul class="services-list">
       <li class="services-item">
-        <a class="services-link" href="">
+        <button class="services-btn">
           <img
             src="../img/services/traumatology.png"
             alt="traumatology"
             width="92"
             height="92"
           />
-          <h3 class="services-title">Ортопедія - травматологія</h3></a
-        >
+          <h3 class="services-title">Ортопедія - травматологія</h3>
+        </button>
       </li>
       <li class="services-item">
-        <a class="services-link" href="">
+        <button class="services-btn">
           <img
             src="../img/services/neurology.png"
             alt="neurology"
@@ -376,10 +373,10 @@
             height="92"
           />
           <h3 class="services-title">Неврологія</h3>
-        </a>
+        </button>
       </li>
       <li class="services-item">
-        <a class="services-link" href="">
+        <button class="services-btn">
           <img
             src=" ../img/services/physiotherapy.png"
             alt="rehabilitation"
@@ -387,10 +384,10 @@
             height="92"
           />
           <h3 class="services-title">Реабілітація</h3>
-        </a>
+        </button>
       </li>
       <li class="services-item">
-        <a class="services-link" href="">
+        <button class="services-btn">
           <img
             src="../img/services/orthopedic.png"
             alt="vertebrology"
@@ -398,9 +395,15 @@
             height="92"
           />
           <h3 class="services-title">Вертебрологія</h3>
-        </a>
+        </button>
       </li>
     </ul>
+
+    <ul class="diseases-list" id="diseases-list" style="display: none"></ul>
+
+    <button class="back-to-services" style="display: none">
+      Повернутися до послуг
+    </button>
   </div>
 </section>
 
