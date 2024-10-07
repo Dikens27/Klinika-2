@@ -1,10 +1,6 @@
 .services {
   width: 100%;
-  background: linear-gradient(
-    -87.61deg,
-    #dde9ff 43.16%,
-    rgba(221, 233, 255, 0) 92.3%
-  );
+  background-color: #dce4ee;
 }
 
 .services-list {
@@ -41,7 +37,7 @@
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
   .services-title {
-    color: var(--color-text);
+    color: var(--color-title-3);
   }
 }
 

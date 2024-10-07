@@ -69,7 +69,7 @@
 
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: orange;
+  color: #253745;
 }
 
 .header-contacts {
@@ -85,7 +85,7 @@
 }
 
 .svg {
-  fill: darkcyan;
+  fill: var(--color-title);
 }
 
 .header-contacts-item-text {

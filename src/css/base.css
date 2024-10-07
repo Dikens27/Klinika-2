@@ -6,11 +6,10 @@
   letter-spacing: 0.02em;
 
   --color-title-2: dimgray;
-  --color-title: darkcyan;
+  /* --color-title: darkcyan; */
   --color-text: #0c0c0c;
-
-  /* --color-title: #6f0100; */
-  /* --color-title: #DCE4EE; */
+  --color-title-3: #dce4ee;
+  --color-title: #6f0100;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-text);
-  background-color: #fffafa;
+  background-color: #dce4ee;
 }
 
 main {
