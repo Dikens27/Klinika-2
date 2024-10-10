@@ -84,7 +84,7 @@
   align-items: center;
 }
 
-.svg {
+.header-svg {
   fill: var(--color-title);
 }
 

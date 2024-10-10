@@ -35,16 +35,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Очищаємо список хвороб
     diseasesList.innerHTML = '';
 
-    // Створюємо нові елементи для кожної хвороби
+    // Додаємо HTML для кожної хвороби за допомогою insertAdjacentHTML
     diseases.forEach(disease => {
-      const li = document.createElement('li');
-      li.textContent = disease;
-      li.classList.add('diseases-item'); // Додаємо клас до кожного елемента
-      diseasesList.appendChild(li);
+      diseasesList.insertAdjacentHTML(
+        'beforeend',
+        `
+        <li class="diseases-item">
+          <h3 class="diseases-item-title">${disease}</h3>
+        </li>
+      `
+      );
     });
 
     // Показуємо список хвороб та кнопку повернення
-    diseasesList.style.display = 'block';
+    diseasesList.style.display = 'flex';
     backToServicesBtn.style.display = 'block';
   }
 });

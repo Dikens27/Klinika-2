@@ -33,3 +33,7 @@ button {
   outline: 0;
   border: none;
 }
+
+svg {
+  overflow: visible;
+}
