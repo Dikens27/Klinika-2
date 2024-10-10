@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klinika</title>
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CkpOyIMm.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-VAYvQT5C.css">
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
   <div class="container">
     <div class="top-container">
       <nav class="header-nav">
@@ -32,10 +32,10 @@
             <a href="#about" class="header-nav-link">ПРО НАС</a>
           </li>
           <li class="header-nav-item">
-            <a href="#doctors" class="header-nav-link">СПЕЦІАЛІСТИ</a>
+            <a href="#services" class="header-nav-link">ПОСЛУГИ</a>
           </li>
           <li class="header-nav-item">
-            <a href="#services" class="header-nav-link">ПОСЛУГИ</a>
+            <a href="#doctors" class="header-nav-link">СПЕЦІАЛІСТИ</a>
           </li>
           <li class="header-nav-item">
             <a href="#contacts" class="header-nav-link">КОНТАКТИ</a>
@@ -45,7 +45,12 @@
 
       <ul class="header-contacts">
         <li class="header-contacts-item">
-          <svg class="svg" width="20" height="20" aria-label="icon-clock">
+          <svg
+            class="header-svg"
+            width="20"
+            height="20"
+            aria-label="icon-clock"
+          >
             <use href="../img/sprite.svg#icon-clock"></use>
           </svg>
 
@@ -55,7 +60,7 @@
           </p>
         </li>
         <li class="header-contacts-item">
-          <svg class="svg" width="20" height="20" aria-label="icon-pin">
+          <svg class="header-svg" width="20" height="20" aria-label="icon-pin">
             <use href="../img/sprite.svg#icon-pin"></use>
           </svg>
 
@@ -65,7 +70,12 @@
           </a>
         </li>
         <li class="header-contacts-item">
-          <svg class="svg" width="20" height="20" aria-label="icon-phone">
+          <svg
+            class="header-svg"
+            width="20"
+            height="20"
+            aria-label="icon-phone"
+          >
             <use href="../img/sprite.svg#icon-phone"></use>
           </svg>
 
@@ -77,19 +87,21 @@
     </div>
   </div>
 </header>
-
+ -->
 
     <main>
-      <section class="section" id="about">
-  <div class="container">
+      <section class="container" id="about">
+  <div class="section">
     <div class="about">
       <div class="section-title-container">
-        <img
-          src="../img/titles/medical-symbol.png"
+        <svg
+          class="section-title-icon"
           width="92"
           height="92"
-          alt="medical-symbol"
-        />
+          aria-label="icon-medical-symbol"
+        >
+          <use href="../img/sprite.svg#icon-medical-symbol"></use>
+        </svg>
         <h2 class="section-title">Про нас</h2>
       </div>
 
@@ -140,10 +152,17 @@
   </div>
 </section>
 
-      <section class="section stages">
-  <div class="container">
+      <section class="container">
+  <div class="section">
     <div class="section-title-container">
-      <img src="../img/titles/stages.png" width="92" height="92" alt="stages" />
+      <svg
+        class="section-title-icon"
+        width="92"
+        height="92"
+        aria-label="icon-stages"
+      >
+        <use href="../img/sprite.svg#icon-stages"></use>
+      </svg>
       <h2 class="section-title">Етапи лікування</h2>
     </div>
 
@@ -157,8 +176,22 @@
           </p>
         </div>
 
-        <svg class="svg" width="40" height="40" aria-label="icon-arrow-right">
+        <svg
+          class="stages-svg-right"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-right"
+        >
           <use href="../img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+
+        <svg
+          class="stages-svg-down"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-down"
+        >
+          <use href="../img/sprite.svg#icon-arrow-down"></use>
         </svg>
       </li>
       <li class="stages-item">
@@ -170,8 +203,22 @@
           </p>
         </div>
 
-        <svg class="svg" width="40" height="40" aria-label="icon-arrow-right">
+        <svg
+          class="stages-svg-right"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-right"
+        >
           <use href="../img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+
+        <svg
+          class="stages-svg-down"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-down"
+        >
+          <use href="../img/sprite.svg#icon-arrow-down"></use>
         </svg>
       </li>
       <li class="stages-item">
@@ -182,8 +229,22 @@
           </p>
         </div>
 
-        <svg class="svg" width="40" height="40" aria-label="icon-arrow-right">
+        <svg
+          class="stages-svg-right"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-right"
+        >
           <use href="../img/sprite.svg#icon-arrow-right"></use>
+        </svg>
+
+        <svg
+          class="stages-svg-down"
+          width="40"
+          height="40"
+          aria-label="icon-arrow-down"
+        >
+          <use href="../img/sprite.svg#icon-arrow-down"></use>
         </svg>
       </li>
       <li class="stages-item">
@@ -199,15 +260,79 @@
   </div>
 </section>
 
-      <section class="slider" id="doctors">
-  <div class="slider-section">
+      <!-- <section class="section services" id="services">
+  <div class="container">
     <div class="section-title-container">
-      <img
-        src="../img/titles/doctors.png"
+      <svg
+        class="section-title-icon"
         width="92"
         height="92"
-        alt="stages"
-      />
+        aria-label="icon-services"
+      >
+        <use href="../img/sprite.svg#icon-services"></use>
+      </svg>
+      <h2 class="section-title">Що вас турбує?</h2>
+    </div>
+
+    <ul class="services-list">
+      <li class="services-item">
+        <button class="services-btn">
+          <svg
+            class="services-svg"
+            width="92"
+            height="92"
+            aria-label="icon-traumatology"
+          >
+            <use href="../img/sprite.svg#icon-traumatology"></use>
+          </svg>
+          <h3 class="services-title">Травматологія</h3>
+        </button>
+      </li>
+      <li class="services-item">
+        <button class="services-btn">
+          <svg
+            class="services-svg"
+            width="92"
+            height="92"
+            aria-label="icon-neurology"
+          >
+            <use href="../img/sprite.svg#icon-neurology"></use>
+          </svg>
+          <h3 class="services-title">Неврологія</h3>
+        </button>
+      </li>
+      <li class="services-item">
+        <button class="services-btn">
+          <svg
+            class="services-svg"
+            width="92"
+            height="92"
+            aria-label="icon-orthopedic"
+          >
+            <use href="../img/sprite.svg#icon-orthopedic"></use>
+          </svg>
+          <h3 class="services-title">Вертебрологія</h3>
+        </button>
+      </li>
+    </ul>
+
+    <button class="back-to-services" style="display: none">Назад</button>
+
+    <ul class="diseases-list" id="diseases-list" style="display: none"></ul>
+  </div>
+</section>
+ -->
+      <!-- <section class="slider" id="doctors">
+  <div class="slider-section">
+    <div class="section-title-container">
+      <svg
+        class="section-title-icon"
+        width="92"
+        height="92"
+        aria-label="icon-doctors"
+      >
+        <use href="../img/sprite.svg#icon-doctors"></use>
+      </svg>
       <h2 class="section-title">Спеціалісти</h2>
     </div>
   </div>
@@ -278,7 +403,7 @@
     <div class="slide-content">
       <div class="slide-content-titles">
         <h3 class="slide-content-title-1">Терещенко Максим Станіславович</h3>
-        <h4 class="slide-content-title-2">Фізичний терапевт / Кінезіолог</h4>
+        <h4 class="slide-content-title-2">Фізичний терапевт / Ерготерапевт</h4>
       </div>
 
       <ul class="slide-content-list">
@@ -286,7 +411,8 @@
           <h5 class="slide-content-title">Освіта:</h5>
           <ul class="slide-content-item-list">
             <li class="slide-content-item-list-item">
-              2019 - 2023: Київський університет фізичної культури та спорту
+              2019 - 2023: Національний університет фізичного виховання та
+              спорту України
             </li>
           </ul>
         </li>
@@ -294,7 +420,7 @@
           <h5 class="slide-content-title">Досвід роботи:</h5>
           <ul class="slide-content-item-list">
             <li class="slide-content-item-list-item">
-              2021 - по теперішній час: Медичний центр Tendo (м.Біла Церква)
+              2021 - 2024: Медичний центр Tendo (м.Біла Церква)
             </li>
           </ul>
         </li>
@@ -305,19 +431,6 @@
               2021: Certificate "HEADACHE AND DIZZINESS IN THE PRACTICE OF A
               PHYSICAL THERAPIST" (Ukrainian academy of rehabilitation and human
               health);
-            </li>
-            <li class="slide-content-item-list-item">
-              2021: Сертифікат "УЗД та УЗ навігація в ортопедії" (Українська
-              медична академія);
-            </li>
-            <li class="slide-content-item-list-item">
-              2021: Сертифікат "Надання домедичної допомоги пораненим
-              (травмованим) військовослужбовцям в умовах ведення бойових дій"
-              (Українська військово-медична академія);
-            </li>
-            <li class="slide-content-item-list-item">
-              2021: Сертифікат "Суперіндуктивна терапія/Високоінтенсивна
-              лазеротерапія" (BTL-UKRAINE);
             </li>
             <li class="slide-content-item-list-item">
               2021: Сертифікат "Ударно-хвильова терапія / ТР-терапія"
@@ -339,75 +452,8 @@
   <button type="button" class="prev">&#10094;</button>
   <button type="button" class="next">&#10095;</button>
 </section>
-
-      <section class="section services" id="services">
-  <div class="container">
-    <div class="section-title-container">
-      <img
-        src="../img/titles/services.png"
-        width="92"
-        height="92"
-        alt="stages"
-      />
-      <h2 class="section-title">Що вас турбує?</h2>
-    </div>
-
-    <ul class="services-list">
-      <li class="services-item">
-        <button class="services-btn">
-          <img
-            src="../img/services/traumatology.png"
-            alt="traumatology"
-            width="92"
-            height="92"
-          />
-          <h3 class="services-title">Ортопедія - травматологія</h3>
-        </button>
-      </li>
-      <li class="services-item">
-        <button class="services-btn">
-          <img
-            src="../img/services/neurology.png"
-            alt="neurology"
-            width="92"
-            height="92"
-          />
-          <h3 class="services-title">Неврологія</h3>
-        </button>
-      </li>
-      <li class="services-item">
-        <button class="services-btn">
-          <img
-            src=" ../img/services/physiotherapy.png"
-            alt="rehabilitation"
-            width="92"
-            height="92"
-          />
-          <h3 class="services-title">Реабілітація</h3>
-        </button>
-      </li>
-      <li class="services-item">
-        <button class="services-btn">
-          <img
-            src="../img/services/orthopedic.png"
-            alt="vertebrology"
-            width="92"
-            height="92"
-          />
-          <h3 class="services-title">Вертебрологія</h3>
-        </button>
-      </li>
-    </ul>
-
-    <ul class="diseases-list" id="diseases-list" style="display: none"></ul>
-
-    <button class="back-to-services" style="display: none">
-      Повернутися до послуг
-    </button>
-  </div>
-</section>
-
-      <section class="contacts" id="contacts">
+ -->
+      <!-- <section class="contacts" id="contacts">
   <iframe
     class="contacts-map"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.779998666587!2d30.116980991402027!3d49.79433882789608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cba1fef08f35%3A0x8603d1c6b7aaf241!2z0JzQtdC00LjRh9C90LjQuSDRhtC10L3RgtGAINC_0L4g0LvRltC60YPQstCw0L3QvdGOINGB0L_QuNC90Lgg0YLQsCDRgdGD0LPQu9C-0LHRltCyIFRlbmRvLiDQntGA0YLQvtC_0LXQtC3RgtGA0LDQstC80LDRgtC-0LvQvtCzLiDQpdGW0YDRg9GA0LMuINCg0LXQsNCx0ZbQu9GW0YLQsNGG0ZbRjw!5e0!3m2!1suk!2sua!4v1727435923373!5m2!1suk!2sua"
@@ -451,17 +497,8 @@
       </a>
     </div>
   </div>
-  <!-- <div class="section-title-container">
-              <img
-                src="./images/titles/contacts.png"
-                width="92"
-                height="92"
-                alt="stages"
-              />
-              <h2 class="section-title">Контакти</h2>
-            </div> -->
 </section>
-
+ -->
     </main>
 
     <footer class="footer"></footer>
