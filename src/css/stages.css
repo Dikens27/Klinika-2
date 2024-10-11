@@ -26,58 +26,6 @@
     background-color: #f9f9f9;
   }
 
-  .stages-svg-right {
-    fill: var(--color-title);
-    display: none;
-  }
-
-  .stages-svg-down {
-    fill: var(--color-title);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .stages-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .stages-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .stages-item-container {
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .stages-item-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--color-text);
-  }
-
-  .stages-item-text {
-    color: var(--color-text);
-  }
-}
-/* @media screen and (min-width: 320px) {
-
-  .stages-item-container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
   .stages-item-title {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -92,43 +40,67 @@
     color: var(--color-text);
   }
 
-  .svg {
-    flex-shrink: 0;
-    margin-left: 8px;
+  .stages-svg-right {
+    fill: var(--color-title);
+    display: none;
+  }
+
+  .stages-svg-down {
+    fill: var(--color-title);
   }
 }
 
 @media screen and (min-width: 768px) {
   .stages-list {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   .stages-item {
-    width: 48%;
-    padding: 24px;
+    width: 300px;
   }
 
   .stages-item-container {
-    width: 100%;
+    height: 150px;
+  }
+
+  .stages-svg-down {
+    display: none;
+  }
+
+  .stages-svg-right:first-of-type,
+  .stages-svg-right:last-of-type {
+    display: block;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .stages-list {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 2px;
   }
 
   .stages-item {
-    width: calc(25% - 16px);
-    padding: 32px;
-    border: none;
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 
   .stages-item-container {
     width: 240px;
+    /* padding: 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* border: none;
+    background-color: inherit; */
+  }
+
+  .stages-item-container {
+    height: 180px;
   }
 
   .stages-item-title {
@@ -139,8 +111,7 @@
     font-size: 16px;
   }
 
-  .svg {
-    width: 40px;
-    height: 40px;
+  .stages-svg-right {
+    display: block;
   }
-} */
+}
