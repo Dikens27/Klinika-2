@@ -10,10 +10,11 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
-    base: '/Klinika-2/',
+    base: '/',
     build: {
       sourcemap: true,
       rollupOptions: {
+        external: ['/Klinika-2/index.js'],
         input: glob.sync('./src/*.html'),
         output: {
           manualChunks(id) {
