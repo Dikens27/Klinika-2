@@ -10,7 +10,6 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
-    base: '/klinika-2/',
     build: {
       sourcemap: true,
       rollupOptions: {
@@ -35,7 +34,7 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: 'dist',
+      outDir: '../dist',
       emptyOutDir: true,
     },
     plugins: [

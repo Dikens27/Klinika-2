@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/klinika-2/",
+    "build": "vite build --base=/Klinika-2/",
     "preview": "vite preview"
   },
   "devDependencies": {
