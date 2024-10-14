@@ -1,2 +1,2 @@
-import './public/js/doctors';
-import './public/js/services';
+import './js/doctors';
+import './js/services';
