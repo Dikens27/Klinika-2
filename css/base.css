@@ -1,0 +1,37 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  --color-title: #6f0100;
+  --color-title-2: dimgray;
+  --color-text: #0c0c0c;
+  --color-background: #dce4ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  background-color: #dce4ee;
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main:has(.back-link) {
+  text-align: center;
+}
